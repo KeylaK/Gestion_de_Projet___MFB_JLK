@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(rgb(210, 255, 87), rgb(224, 106, 9));
+}
+
+
+
+header{
+     background-color: rgb(245, 245, 245); 
+    height: 100px;
+    padding: 20px;
+    
+}
+.enhaut{
+
+ float: left;
+ padding-left: 15% ;
+}
+.menu{
+    background-color: rgb(248, 220, 220); 
+}
+img{
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+.imgheader{  /*image du header à gauche*/
+    float: left;
+    width: auto;
+    margin: 5px;
+}
+
+li {
+    display: inline; /*reste en ligne*/
+    float: left;/*case alignée à gauche*/
+
+}
+
+ /*{
+    margin: 0 auto;
+    max-width: 70rem;
+    background-color: rgba(255, 255, 255, 0.345);
+    display: flex;
+    box-shadow: 0px 0px 15px 4px #b3b3b3;
+    
+}*/
+
+.menu ul, .menu a{
+ display:flex;
+     /*  float : right;*/
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(180, 100, 40);
+    padding: 0;
+  
+}
+
+ul{
+    /*pour enlever les points devant (marqueurs de listes)*/
+    list-style-type: none; 
+    /*Définir et supprimer les paramètres par défaut du navigateur*/
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+li a:hover, .romans:hover .rom {
+    background-color: rgb(247, 255, 7);
+  }
+
+footer{
+  
+    background-color: rgb(245, 245, 245); 
+    height: 100px;
+    padding: 0px;
+   }

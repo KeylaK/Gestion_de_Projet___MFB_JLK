@@ -1,0 +1,23 @@
+<DOCTYPE html>
+    <html lang="fr">
+    
+        <head>
+            <!--Caractères compris et adaptabilité de l'affichage-->
+            <meta charset="utf-8">
+            <meta name="viewport" content="witdh=device-witdh, initial-scale=1.0">
+            <!--intitulé de la page web-->
+            <title>de Keyla KAMARA </title>
+            <!--pour avoir les modifs en css-->
+            <link rel="stylesheet" href="Keyla.css" >
+          
+        </head>
+
+        <!--Corps (contenu) -->
+        <body>
+        
+
+        </body>
+
+        
+    </html>
+</DOCTYPE>

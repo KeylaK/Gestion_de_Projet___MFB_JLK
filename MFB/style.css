@@ -1,0 +1,225 @@
+
+body{
+    background: linear-gradient(rgb(160, 215, 222),rgb(253, 242, 142));
+}
+
+.corps{
+margin: 10px;
+}
+
+.en-tete{ /*Contient le <nav> et tout le header*/
+    border: 2px solid grey;
+    background-color: rgb(245, 243, 243);
+    width: auto;
+    height: 180px;
+}
+
+
+
+
+/***********************Haut de page (en-tête)***********************/
+header{       /*Header dans le body*/
+   border: 3px solid rgb(27, 210, 234); /*Cadre contenant le titre*/
+   height: 110px;
+   margin: 15px;
+}
+
+.imgheader{  /*image du header à gauche*/
+    float: left;
+    width: auto;
+    margin: 5px;
+}
+
+img{
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+#TITRE{ /*titre du header à droite*/
+    float: left;
+    padding-left: 15%;
+    
+}
+
+h1{
+    font-size: 250%;
+}
+
+ul{
+    /*pour enlever les points devant (marqueurs de listes)*/
+    list-style-type: none; 
+    /*Définir et supprimer les paramètres par défaut du navigateur*/
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+li {
+    display: inline; /*reste en ligne*/
+    float: left;/*case alignée à gauche*/
+
+}
+
+a {
+    display: block; /*en bloc*/
+    padding: 8px;
+    /*background-color: #c9cbce;*/
+}
+
+form{ /*Barre de recherche à droite*/
+    float: right;
+    padding-right: 20px;
+ } 
+
+.menu_separation{
+    padding-top: 8px;
+}
+
+/**********Barre de navigation déroulante******PAS MISE****/
+/*Elle ne s'affiche pas mais surligne les mots etc*/
+
+li.romans{ /*romans aligné vers le bas*/
+    display: inline-block;
+}
+
+
+/*Actif qui met en évidence le mot sélectionné*/
+li a:hover, .romans:hover .rom {
+  background-color: rgb(247, 255, 7);
+}
+
+
+/*texte espacé*/
+li a{
+    padding-right: 30px;
+    font-size: large;
+}
+
+p{
+    font-size: large;
+    padding-left: 10%;
+}
+
+
+
+
+
+/****************************Corps de la page ****************************/
+.new{
+    border: 3px groove rgb(50, 188, 216);
+    height: 50px;
+    padding-left: 25px;
+    margin-top: 5px;
+    margin-left: 40%;
+    margin-right: 43%;
+    font-size: xx-large;
+    text-decoration: underline;
+    background-color: white;
+}
+
+.mentions{
+    border: 3px solid rgb(50, 188, 216);
+    margin: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    background-color: whitesmoke;
+    /*Taille provisoire (à changer à l'insertion du contenu)*/
+    height: flex;
+    width: 98%;
+
+}
+
+
+aside{ /*Dasn le MAIN */
+    border: 2px solid rgb(185, 175, 175);
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+main{
+    border: 2px solid rgb(247, 255, 7);
+    margin: 10px;
+    float: middle;
+    display: flex;
+
+}
+
+.contenu{
+    border: 3px solid rgb(50, 188, 216);
+    margin: 10px;
+    padding-bottom: 15px;
+    float: right;
+    display: flex;
+    background-color: whitesmoke;
+
+    
+    /*Taille du cadre*/
+    height: flex;
+    width: 92%;
+}
+
+
+
+/**SECTION utilisant un GRID pour des cases de différents romans**/
+.layout{
+    width: 75%;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    display: grid;
+    grid: 
+    "a b c d" 320px /*longueur des cases avec disposition*/
+    "e f g h" 320px
+    "i j k l" 320px
+    /230px 230px 230px 230px; /*largeur des cases*/
+    gap: 20px; /*Espace entre eux*/
+
+}
+
+/*contenu des cases*/
+.a{ grid-area: a; margin-bottom: 20px;}
+.b{ grid-area: b;  margin-bottom: 20px;}
+.c{ grid-area: c; margin-bottom: 20px;}
+.d{ grid-area: d;; margin-bottom: 20px;}
+.e{ grid-area: e; margin-bottom: 20px;}
+.f{ grid-area: f; margin-bottom: 20px;}
+.g{ grid-area: g; margin-bottom: 20px;}
+.h{ grid-area: h; margin-bottom: 20px;}
+.i{ grid-area: i; margin-bottom: 20px;}
+.j{ grid-area: j;margin-bottom: 20px;}
+.k{ grid-area: k; margin-bottom: 20px;}
+.l{ grid-area: l; margin-bottom: 20px;}
+
+
+h4{
+    text-decoration: underline;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+
+
+
+/***************************Bas de page************************/
+footer{ /*footer dans le body*/
+    background-color: rgb(199, 199, 199);
+    align-items: center;
+    border: groove;
+
+}
+
+.comment{ /*commentaire*/
+    text-align: center;
+}
+
+
+
+input{
+    padding-left: 10px;
+    margin-bottom: 5px;
+}

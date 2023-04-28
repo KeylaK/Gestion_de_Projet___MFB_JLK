@@ -1,0 +1,220 @@
+body{
+    background: linear-gradient(70deg,rgb(220, 215, 215),rgb(160, 215, 222))
+}
+
+.corps{
+margin: 10px;
+}
+
+.en-tete{ /*Contient le <nav> et tout le header*/
+    border: 2px solid grey;
+    background-color: rgb(245, 243, 243);
+    width: auto;
+    height: 180px;
+}
+
+
+
+
+/***********************Haut de page (en-tête)***********************/
+header{       /*Header dans le body*/
+   border: 3px solid rgb(27, 210, 234); /*Cadre contenant le titre*/
+   height: 110px;
+   margin: 15px;
+}
+
+.imgheader{  /*image du header à gauche*/
+    float: left;
+    width: auto;
+    margin: 5px;
+}
+
+img{
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+#TITRE{ /*titre du header à droite*/
+    float: left;
+    padding-left: 15%;
+    
+}
+
+h1{
+    font-size: 250%;
+}
+
+
+ul{
+    /*pour enlever les points devant (marqueurs de listes)*/
+    list-style-type: none; 
+    /*Définir et supprimer les paramètres par défaut du navigateur*/
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+li {
+    display: inline; /*reste en ligne*/
+    float: left;/*case alignée à gauche*/
+
+}
+
+a {
+    display: block; /*en bloc*/
+    padding: 8px;
+    /*background-color: #c9cbce;*/
+}
+
+form{ /*Barre de recherche à droite*/
+    float: right;
+    padding-right: 20px;
+ } 
+
+.menu_separation{
+    padding-top: 8px;
+}
+
+/**********Barre de navigation déroulante******PAS MISE****/
+/*Elle ne s'affiche pas mais surligne les mots etc*/
+
+li.romans{ /*romans aligné vers le bas*/
+    display: inline-block;
+}
+
+/*Actif qui met en évidence le mot sélectionné*/
+li a:hover, .romans:hover .rom {
+  background-color: rgb(247, 255, 7);
+}
+
+/*texte espacé*/
+li a{
+    padding-right: 30px;
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+/****************************Corps de la page ****************************/
+
+.new{
+    border: 3px groove rgb(50, 188, 216);
+    height: 50px;
+    padding-left: 25px;
+    margin-top: 5px;
+
+
+    font-size: xx-large;
+    text-decoration: underline;
+    background-color: white;
+}
+
+main{
+    border: 2px solid rgb(247, 255, 7);
+    margin: 10px;
+    float: middle;
+    display: flex;
+
+}
+.BLOCK{
+    border: 3px solid rgb(50, 188, 216);
+    margin: 20px;
+    float: left;
+    display: flex;
+    background-color: whitesmoke;
+    margin-top: 20px;
+    /*Taille provisoire (à changer à l'insertion du contenu)*/
+    height: flex;
+    width: 100%;
+    padding-left: 30px; 
+}
+
+.contenu{
+    border: 3px solid rgb(50, 188, 216);
+    margin: 20px;
+    float: left;
+    display: flex;
+    background-color: whitesmoke;
+    margin-top: 20px;
+    /*Taille provisoire (à changer à l'insertion du contenu)*/
+    height: flex;
+    width: 100%;
+    padding-left: 30px;
+}
+
+
+/**SECTION utilisant un GRID pour des cases de différents romans**/
+.layout{
+    width: 75%;
+    margin-top: 20px;
+    margin-left: 45px;
+
+
+
+    display: grid;
+    grid: 
+    "a b c d" 400px /*longueur des cases avec disposition*/
+    "e f g h" 400px
+    "i j k l" 400px
+    "m n o p" 400px
+    /300px 300px 300px 300px; /*largeur des cases*/
+    gap: 10px; /*Espace entre eux*/
+}
+
+/*contenu des cases*/
+.a{ grid-area: a; margin-bottom: 20px;}
+.b{ grid-area: b; margin-bottom: 20px;}
+.c{ grid-area: c; margin-bottom: 20px;}
+.d{ grid-area: d;; margin-bottom: 20px;}
+.e{ grid-area: e; margin-bottom: 20px;}
+.f{ grid-area: f; margin-bottom: 20px;}
+.g{ grid-area: g; margin-bottom: 20px;}
+.h{ grid-area: h; margin-bottom: 20px;}
+.i{ grid-area: i; margin-bottom: 20px;}
+.j{ grid-area: j; margin-bottom: 20px;}
+.k{ grid-area: k; margin-bottom: 20px;}
+.l{ grid-area: l; margin-bottom: 20px;}
+.m{ grid-area: m; margin-bottom: 20px; }
+.n{ grid-area: n;  margin-bottom: 20px;}
+.o{ grid-area: o;  margin-bottom: 20px;}
+.p{ grid-area: p;  margin-bottom: 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************Bas de page************************/
+footer{ /*footer dans le body*/
+    background-color: rgb(199, 199, 199);
+    align-items: center;
+    border: groove;
+
+}
+
+.comment{ /*commentaire*/
+    text-align: center;
+}
+
+.bdp{
+    float: right;
+    margin-bottom: 10px;
+}
+
+input{
+    padding-left: 10px;
+    margin-bottom: 5px;
+}

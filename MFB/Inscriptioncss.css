@@ -1,0 +1,111 @@
+body{
+    background: linear-gradient(rgb(160, 215, 222),rgb(253, 242, 142));
+}
+
+.corps{
+margin: 10px;
+}
+
+.en-tete{ /*Contient le <nav> et tout le header*/
+    border: 2px solid grey;
+    background-color: rgb(245, 243, 243);
+    width: auto;
+    height: 180px;
+}
+
+
+
+
+/***********************Haut de page (en-tête)***********************/
+header{       /*Header dans le body*/
+   border: 3px solid rgb(27, 210, 234); /*Cadre contenant le titre*/
+   height: 110px;
+   margin: 15px;
+}
+
+.imgheader{  /*image du header à gauche*/
+    float: left;
+    width: auto;
+    margin: 5px;
+}
+
+img{
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+#TITRE{ /*titre du header à droite*/
+    float: left;
+    padding-left: 15%;
+    
+}
+
+h1{
+    font-size: 250%;
+}
+
+ul{
+    /*pour enlever les points devant (marqueurs de listes)*/
+    list-style-type: none; 
+    /*Définir et supprimer les paramètres par défaut du navigateur*/
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+li {
+    display: inline; /*reste en ligne*/
+    float: left;/*case alignée à gauche*/
+
+}
+
+a {
+    display: block; /*en bloc*/
+    padding: 8px;
+    /*background-color: #c9cbce;*/
+}
+
+form{ /*Barre de recherche à droite*/
+    float: right;
+    padding-right: 20px;
+ } 
+
+.menu_separation{
+    padding-top: 8px;
+}
+
+/**********Barre de navigation déroulante******PAS MISE****/
+/*Elle ne s'affiche pas mais surligne les mots etc*/
+
+li.romans{ /*romans aligné vers le bas*/
+    display: inline-block;
+}
+
+
+
+
+/*Actif qui met en évidence le mot sélectionné*/
+li a:hover, .romans:hover .rom {
+  background-color: rgb(247, 255, 7);
+}
+
+/*.romans_content a:hover {background-color: #f1f1f1;}*/
+
+/*.rom:hover .romans_content {
+  display: block;
+}*/
+
+/*texte espacé*/
+li a{
+    padding-right: 30px;
+
+}
+
+footer{ /*footer dans le body*/
+    background-color: rgb(199, 199, 199);
+
+    border: groove;
+
+}
